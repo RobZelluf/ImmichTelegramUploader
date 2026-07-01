@@ -1,0 +1,6 @@
+services:
+  telegram-immich:
+    build: .
+    container_name: telegram-immich
+    restart: unless-stopped
+    env_file: .env
